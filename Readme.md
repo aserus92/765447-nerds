@@ -1,7 +1,7 @@
 ﻿# Личный проект «Нёрдс»
 
 * Студент: [Алексей Сараев](https://up.htmlacademy.ru/htmlcss/21/user/765447).
-* Наставник: [Александр Уразаев] (https://htmlacademy.ru/profile/urazaev).
+* Наставник: [Александр Уразаев](https://htmlacademy.ru/profile/urazaev).
 
 ---
 
