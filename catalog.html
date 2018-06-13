@@ -25,25 +25,59 @@
 		<h1>Магазин готовых шаблонов</h1>
 
 		<aside class="filter">
-			<p class="options">Стоимость:</p>
-			<div class="range">
-				<!-- форма -->
-			</div>
-			<p class="options">Сетка:</p>
-			<ul class="radiobuttons">
-				<li></li>
-				<li></li>
-				<li></li>
-			</ul>
-			<p class="options">Особенности:</p>
-			<ul class="features">
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-				<li></li>
-			</ul>
-			<button class="filter-button">Показать</button>
+			<form action="https://echo.htmlacademy.ru" method="get">
+			<fieldset>
+				<legend class="options">Стоимость:</legend>
+				<input class="range-bar" type="range" name="price-range" min="0" max="15000">
+				<p>
+					<label>от<input type="number" name="min-value" value="0"></label>
+					<label>до<input type="number" name="min-value" value="15000"></label>
+				</p>
+			</fieldset>
+			<fieldset>
+				<legend class="options">Сетка:</legend>
+				<ul>
+					<li class="grid-options">
+						<input class="visually-hidden filter-radio" id="filter-adaptive" type="radio" name="grid-types" value="adaptive" checked>
+						<label for="filter-adaptive">Адаптивная</label>
+					</li>
+					<li class="grid-options">
+						<input class="visually-hidden filter-radio" id="filter-fixed" type="radio" name="grid-types" value="fixed">
+						<label for="filter-fixed">Фиксированная</label>
+					</li>
+					<li class="grid-options">
+						<input class="visually-hidden filter-radio" id="filter-rubber" type="radio" name="grid-types" value="rubber">
+						<label for="filter-rubber">Резиновая</label>
+					</li>
+				</ul>
+			</fieldset>
+			<fieldset>
+				<legend class="options">Особенности:</legend>
+				<ul>
+					<li class="feature-options">
+						<input class="visually-hidden filter-checkbox" id="filter-slider" type="checkbox" name="slider" checked>
+						<label for="filter-slider">Слайдер</label> 
+					</li>
+					<li class="feature-options">
+						<input class="visually-hidden filter-checkbox" id="filter-advantage-block" type="checkbox" name="advantage-block">
+						<label for="filter-advantage-block">Блок преимуществ</label>
+					</li>
+					<li class="feature-options">
+						<input class="visually-hidden filter-checkbox" id="filter-news" type="checkbox" name="news" checked>
+						<label for="filter-news">Новости</label>
+					</li>
+					<li class="feature-options">
+						<input class="visually-hidden filter-checkbox" id="filter-gallery" type="checkbox" name="gallery">
+						<label for="filter-gallery">Галерея</label>
+					</li>
+					<li class="feature-options">
+						<input class="visually-hidden filter-checkbox" id="filter-baskets" type="checkbox" name="baskets">
+						<label for="filter-baskets">Корзина</label>
+					</li>
+				</ul>
+			</fieldset>
+			<button class="filter-button" type="submit">Показать</button>
+			</form>
 		</aside>
 		<div class="sort">
 			<p class="options">Сортировать:</p>
@@ -154,8 +188,22 @@
 
 	<section class="modal">
 		<h2>Напишите нам</h2>
-		<!-- форма -->
-		<span class="modal-close">x</span>
+		<form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
+			<p>
+				<label for="user-name">Ваше имя:</label>
+				<input class="write-us-name" id="user-name" type="text" name="name" placeholder="Имя Фамилия">
+			</p>
+			<p>
+				<label for="user-email">Ваш e-mail:</label>
+				<input class="write-us-email" id="user-email" type="text" name="email" placeholder="email@example.com">
+			</p>
+			<p>
+				<label for="letter">Текст письма:</label>
+				<textarea class="write-us-letter" id="letter" name="letter">В свободной форме</textarea>
+			</p>
+			<button class="button" type="submit">Отправить</button>
+		</form>
+		<button class="modal-close" type="button">Закрыть</button>
 	</section>
 </body>
 </html>
