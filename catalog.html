@@ -3,8 +3,11 @@
 <head>
 	<meta charset="utf-8">
 	<title>Catalog</title>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
-<body>
+<body class="inner-page">
 	<header class="main-header">
 		<nav class="main-navigation">
 			<a class="main-header-logo">
@@ -17,7 +20,7 @@
 				<li><a href="contacts.html">Контакты</a></li>
 			</ul>
 			<ul>
-				<li><a href="basket.html">Корзина</a></li>
+				<li class="user-navigation"><a href="basket.html">Корзина</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -83,7 +86,7 @@
 		<div class="sort">
 			<p class="options">Сортировать:</p>
 			<ul>
-				<li class="sort-options active">
+				<li class="sort-options sort-options-active">
 					<a href="#">По цене:</a>
 				</li>
 				<li class="sort-options">
@@ -102,54 +105,54 @@
 		</div>
 
 		<section class="cards">
-			<h2>Список макетов</h2>
+			<h2 class="visually-hidden">Список макетов</h2>
 			<ul>
 				<li class="cards-block"
 					<img src="img/img-sedona.jpg" width="360" height="576" alt="Sedona">
 					<div class="cards-item-buy">
 						<p><b>Sedona</b></p>
-						<a href="#"><p>Информационный сайт для туристов</p></a>
-						<a class="button">9 900 руб.</a>
+						<a href="#" class="cards-item-description"><p>Информационный сайт для туристов</p></a>
+						<a class="button button-card">9 900 руб.</a>
 					</div>
 				</li>
 				<li class="cards-block">
 					<img src="img/img-pink.jpg" width="360" height="576" alt="Pink">
 					<div class="cards-item-buy">
 						<p><b>Pink app</b></p>
-						<a href="#"><p>Продуктовый лендинг приложения для iOS и Android</p></a>
-						<a class="button">9 900 руб.</a>
+						<a href="#" class="cards-item-description"><p>Продуктовый лендинг приложения для iOS и Android</p></a>
+						<a class="button button-card">9 900 руб.</a>
 					</div>
 				</li>
 				<li class="cards-block">
 					<img src="img/img-barbershop.jpg" width="360" height="576" alt="Borodinski">
 					<div class="cards-item-buy">
 						<p><b>Barbershop</b></p>
-						<a href="#"><p>Сайт салоны красоты. Для мужчин, да.</p></a>
-						<a class="button">9 900 руб.</a>
+						<a href="#" class="cards-item-description"><p>Сайт салоны красоты. Для мужчин, да.</p></a>
+						<a class="button button-card">9 900 руб.</a>
 					</div>
 				</li>
 				<li class="cards-block">
 					<img src="img/img-mishka.jpg" width="360" height="576" alt="Mishka">
 					<div class="cards-item-buy">
 						<p><b>Mishka</b></p>
-						<a href="#"><p>Интернет-магазин вязаных игрушек</p></a>
-						<a class="button">9 900 руб.</a>
+						<a href="#" class="cards-item-description"><p>Интернет-магазин вязаных игрушек</p></a>
+						<a class="button button-card">9 900 руб.</a>
 					</div>
 				</li>
 				<li class="cards-block">
 					<img src="img/img-aplus.jpg" width="360" height="576" alt="A+">
 					<div class="cards-item-buy">
 						<p><b>A plus</b></p>
-						<a href="#"><p>Лендинг курсов повышения квалификации</p></a>
-						<a class="button">9 900 руб.</a>
+						<a href="#" class="cards-item-description"><p>Лендинг курсов повышения квалификации</p></a>
+						<a class="button button-card">9 900 руб.</a>
 					</div>
 				</li>
 				<li class="cards-block">
 					<img src="img/img-kvast.jpg" width="360" height="576" alt="Кваст">
 					<div class="cards-item-buy">
 						<p><b>Кваст</b></p>
-						<a href="#"><p>Промо-сайт производителя крафтового кваса</p></a>
-						<a class="button">9 900 руб.</a>
+						<a href="#" class="cards-item-description"><p>Промо-сайт производителя крафтового кваса</p></a>
+						<a class="button button-card">9 900 руб.</a>
 					</div>
 				</li>
 			</ul>
@@ -157,7 +160,7 @@
 
 		<section class="pages">
 			<ul>
-				<li class="page-button">
+				<li class="page-button page-active">
 					<a href="#">1</a>
 				</li>
 				<li class="page-button">
@@ -179,7 +182,7 @@
 				<p><b>Nerds design studio</b></p>
 				<p>191186, Санкт-Петербург, ул.Б.Конюшенная,д.19/8</p>
 				<p class="number">+7(812)275-75-75</p>
-				<a href="write-us.html" class="button">Напишите нам</a>
+				<a href="write-us.html" class="button button-write-us">Напишите нам</a>
 			</section>
 		</div>
 		<div class="footer-social">
@@ -190,7 +193,7 @@
 			</ul>
 		</div>
 		<p class="footer-text"><b>Давайте дружить, это выгодно!</b></p>
-		<p>Скидка 10% для друзей из социальных сетей.</p>
+		<p class="footer-discount">Скидка 10% для друзей из социальных сетей.</p>
 	</footer>
 
 	<section class="modal">
@@ -208,7 +211,7 @@
 				<label for="letter">Текст письма:</label>
 				<textarea class="write-us-letter" id="letter" name="letter">В свободной форме</textarea>
 			</p>
-			<button class="button" type="submit">Отправить</button>
+			<button class="button button-send-form" type="submit">Отправить</button>
 		</form>
 		<button class="modal-close" type="button">Закрыть</button>
 	</section>

@@ -28,21 +28,23 @@
 		<h1 class="visually-hidden">Веб-студия из Краснодара</h1>
 
 		<section class="slider">
-			<div class="slide-one">
-				<p class="slide-header">Долго, дорого, скрупулезно.</p>
-				<p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-				<a class="button" href="info.html">Узнать больше</a>
-			</div>
-			<div class="slide-two">
-				<p class="slide-header">Любим математику как никто другой</p>
-				<p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
-				<a class="button" href="info.html">Узнать больше</a>
-			</div>
-			<div class="slide-three">
-				<p class="slide-header">Только ночь, только хардкор</p>
-				<p>Работать днем,как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
-				<a class="button" href="info.html">Узнать больше</a>
-			</div>
+			<ul>
+				<li class="slide slide-one">
+					<p class="slide-header">Долго, дорого, скрупулезно.</p>
+					<p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+					<a class="button button-slider" href="info.html">Узнать больше</a>
+				</li>
+				<li class="slide slide-two">
+					<p class="slide-header">Любим математику как никто другой</p>
+					<p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+					<a class="button button-slider" href="info.html">Узнать больше</a>
+				</li>
+				<li class="slide slide-three">
+					<p class="slide-header">Только ночь, только хардкор</p>
+					<p>Работать днем,как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+					<a class="button button-slider" href="info.html">Узнать больше</a>
+				</li>
+			</ul>
 		</section>
 
 		<section class="service">
@@ -52,17 +54,17 @@
 				<li class="service-web">
 					<h3>Веб-сайты</h3>
 					<p>Мир никогда не будет прежним после того,как увидит ваш сайт!</p>
-					<a href="web.html" class="button">Заказать</a>
+					<a href="web.html" class="button button-service-web">Заказать</a>
 				</li>
 				<li class="service-apps">
 					<h3>Приложения</h3>
 					<p>Покорите топ-10 приложений в AppStore и Google Play</p>
-					<a href="apps.html" class="button">Заказать</a>
+					<a href="apps.html" class="button button-service-apps">Заказать</a>
 				</li>
 				<li class="service-presentation">
 					<h3>Презентации</h3>
 					<p>Вы даже не подозреваете насколько вы изумительны!</p>
-					<a href="presentation.html" class="button">Заказать</a>
+					<a href="presentation.html" class="button button-service-presentation">Заказать</a>
 				</li>
 			</ul>
 		</section>
@@ -84,7 +86,7 @@
 					<td>100<sup>%</sup></td>
 					<td>50<sup>%</sup></td>
 				</tr>
-				<tr>
+				<tr class="percent-list-description">
 					<td>Уровень самоотдачи</td>
 					<td>Соблюдение сроков</td>
 					<td>Минимальная предоплата</td>
@@ -98,16 +100,16 @@
 
 			<figure>
 				<ul class="gallery-list">
-					<li class="galery-item">
+					<li class="gallery-item">
 						<img src="img/logo-academy.png" width="199" height="68" alt="Логотип Академии">
 					</li>
-					<li class="galery-item">
+					<li class="gallery-item">
 						<img src="img/logo-barbershop.png" width="209" height="90" alt="Барбершоп">
 					</li>
-					<li class="galery-item">
+					<li class="gallery-item">
 						<img src="img/logo-pink.png" width="185" height="52" alt="Pink">
 					</li>
-					<li class="galery-item">
+					<li class="gallery-item">
 						<img src="img/logo-mishka.png" width="173" height="84" alt="Mishka">
 					</li>
 				</ul>
@@ -119,9 +121,9 @@
 		<div class="map">
 			<section class="map-contacts">
 				<p><b>Nerds design studio</b></p>
-				<p>191186, Санкт-Петербург, ул.Б.Конюшенная,д.19/8</p>
+				<p>191186, Санкт-Петербург,<br> ул.Б.Конюшенная,д.19/8</p>
 				<p class="number">+7(812)275-75-75</p>
-				<a href="write-us.html" class="button">Напишите нам</a>
+				<a href="write-us.html" class="button button-write-us">Напишите нам</a>
 			</section>
 		</div>
 		<div class="footer-social">
@@ -150,7 +152,7 @@
 				<label for="letter">Текст письма:</label>
 				<textarea class="write-us-letter" id="letter" name="letter">В свободной форме</textarea>
 			</p>
-			<button class="button" type="submit">Отправить</button>
+			<button class="button button-send-form" type="submit">Отправить</button>
 		</form>
 		<button class="modal-close" type="button">Закрыть</button>
 	</section>
