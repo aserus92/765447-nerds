@@ -248,17 +248,17 @@ a,
 	text-transform: uppercase;
 }
 
-fieldset .grid-options,
-fieldset .feature-options {
+.filter-form .grid-options,
+.filter-form .feature-options {
 	color: #283136;
 }
 
-fieldset ul {
+.filter-form ul {
 	list-style: none;
 	line-height: 25px;
 }
 
-fieldset {
+.filter-form {
 	border: none;
 }
 

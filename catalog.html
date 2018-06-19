@@ -10,7 +10,7 @@
 <body class="inner-page">
 	<header class="main-header">
 		<nav class="main-navigation">
-			<a class="main-header-logo">
+			<a class="main-header-logo" href="index.html">
 				<img src="img/nerds-logo.png" width="160" height="65" alt="Логотип проекта Nerds">
 			</a>
 			<ul class="site-navigation">
@@ -30,7 +30,7 @@
 
 		<aside class="filter">
 			<form action="https://echo.htmlacademy.ru" method="get">
-			<fieldset>
+			<fieldset class="filter-form">
 				<legend class="options">Стоимость:</legend>
 				<input class="range-bar" type="range" name="price-range" min="0" max="15000">
 				<p>
@@ -38,7 +38,7 @@
 					<label>до<input type="number" name="min-value" value="15000"></label>
 				</p>
 			</fieldset>
-			<fieldset>
+			<fieldset class="filter-form">
 				<legend class="options">Сетка:</legend>
 				<ul>
 					<li class="grid-options">
@@ -55,7 +55,7 @@
 					</li>
 				</ul>
 			</fieldset>
-			<fieldset>
+			<fieldset class="filter-form">
 				<legend class="options">Особенности:</legend>
 				<ul>
 					<li class="feature-options">
@@ -107,7 +107,7 @@
 		<section class="cards">
 			<h2 class="visually-hidden">Список макетов</h2>
 			<ul>
-				<li class="cards-block"
+				<li class="cards-block">
 					<img src="img/img-sedona.jpg" width="360" height="576" alt="Sedona">
 					<div class="cards-item-buy">
 						<p><b>Sedona</b></p>
@@ -205,11 +205,11 @@
 			</p>
 			<p>
 				<label for="user-email">Ваш e-mail:</label>
-				<input class="write-us-email" id="user-email" type="text" name="email" placeholder="email@example.com">
+				<input class="write-us-email" id="user-email" type="email" name="email" placeholder="email@example.com">
 			</p>
 			<p>
 				<label for="letter">Текст письма:</label>
-				<textarea class="write-us-letter" id="letter" name="letter">В свободной форме</textarea>
+				<textarea class="write-us-letter" id="letter" name="letter" placeholder="В свободной форме"></textarea>
 			</p>
 			<button class="button button-send-form" type="submit">Отправить</button>
 		</form>
