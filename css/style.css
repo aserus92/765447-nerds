@@ -48,6 +48,8 @@ a,
 }
 
 .slider ul {
+	margin: 0;
+	padding: 0;
 	list-style: none;
 }
 
@@ -87,6 +89,8 @@ a,
 }
 
 .service-list {
+	margin: 0;
+	padding: 0;
 	list-style: none;
 }
 
@@ -396,3 +400,161 @@ a,
 .inner-page .footer-discount {
 	color: #283136;
 }
+
+/* Построение сетки */
+
+.main-navigation {
+
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	width: 1200px;
+	height: 65px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+.site-navigation {
+	margin: 0;
+	padding: 0;
+
+	display: flex;
+	justify-content: space-around;
+	width: 760px;
+
+}
+
+.user-navigation {
+	margin: 0;
+	padding: 0;
+
+	width: 160px;
+}
+
+.main-header-logo {
+	width: 160px;
+	height: 65px;
+}
+
+.main-navigation-wrapper {
+	width: 100%;
+	background-color: #eeeeee;
+
+	padding-top: 49px;
+}
+
+.container{
+	width: 1200 px;
+	margin-left:auto;
+	margin-right: auto;
+	padding: 0 20px;
+
+	background-color: #67E667;
+}
+
+.slide {
+	height: 431px;
+	margin-bottom: 80px;
+}
+
+.service-list {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 80px;
+	
+	/* temp */
+	min-height: 350px;
+}
+
+.service-web,
+.service-apps,
+.service-presentation {
+	width: 300px;
+
+	/* temp */
+	min-height: 350px;
+}
+
+.description {
+	display: flex;
+	justify-content: space-between;
+	padding-top: 40px;
+
+	/*temp*/
+	min-height: 525px;
+}
+
+.description-main-block,
+.description-secondary-block {
+	padding-bottom: 75px;
+
+	/*temp*/
+	min-height: 525px;
+}
+
+.description-main-block {
+	padding-top: 35px;
+}
+
+.description-list {
+	padding: 0;
+	margin: 0;
+}
+
+.gallery-list {
+	display: flex;
+	justify-content: space-around;
+
+	/*temp*/
+	min-height: 180px;
+}
+
+.gallery-item {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.map {
+	width: 100%;
+
+	/* temp */
+	min-height: 420px;
+}
+
+.map-contacts {
+	width: 320px;
+	margin-top: 55px;
+	margin-bottom: 55px;
+	margin-right: auto;
+	padding-top: 55px;
+	padding-left: 50px;
+
+	/* temp */
+	min-height: 308px;
+}
+
+.footer-info {
+	display: flex;
+}
+
+.footer-social ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.footer-social {
+	display: flex;
+	justify-content: space-between;
+
+	width: 260px;
+	margin-right: 140px;
+
+	/* temp */
+	min-height: 80px;
+}
+
+
+

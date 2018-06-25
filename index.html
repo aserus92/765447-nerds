@@ -9,6 +9,7 @@
 </head>
 <body>
 	<header class="main-header">
+		<div class="main-navigation-wrapper">
 		<nav class="main-navigation">
 			<a class="main-header-logo">
 				<img src="img/nerds-logo.png" width="160" height="65" alt="Логотип проекта Nerds">
@@ -23,8 +24,10 @@
 				<li class="user-navigation"><a href="basket.html">Корзина</a></li>
 			</ul>
 		</nav>
+		</div>
 	</header>
-	<main class="content">
+
+	<main class="container">
 		<h1 class="visually-hidden">Веб-студия из Краснодара</h1>
 
 		<section class="slider">
@@ -70,28 +73,31 @@
 		</section>
 
 		<section class="description">
-			<p class="description-header">Мы - маленькая,но гордая дизайн-студия из Краснодара.</p>
-			<p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
-			<p class="description-subheader">Выполняем заказы на разработку:</p>
-			<ul class="description-list">
-				<li class="description-item"><p>Веб-сайтов любой сложности</p></li>
-				<li class="description-item"><p>Мобильных приложений для iOS и Android</p></li>
-				<li class="description-item"><p>Слайдшоу и видео для корпоративных презентаций</p></li>
-			</ul>
-
-			<p class="description-subheader">С 2004 года любим точность во всем:</p>
-			<table class="percent-list">
-				<tr class="percent-list-item">
-					<td>146<sup>%</sup></td>
-					<td>100<sup>%</sup></td>
-					<td>50<sup>%</sup></td>
-				</tr>
-				<tr class="percent-list-description">
-					<td>Уровень самоотдачи</td>
-					<td>Соблюдение сроков</td>
-					<td>Минимальная предоплата</td>
-				</tr>
-			</table>
+			<div class="description-main-block">
+				<p class="description-header">Мы - маленькая,но гордая дизайн-студия из Краснодара.</p>
+				<p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
+				<p class="description-subheader">Выполняем заказы на разработку:</p>
+				<ul class="description-list">
+					<li class="description-item"><p>Веб-сайтов любой сложности</p></li>
+					<li class="description-item"><p>Мобильных приложений для iOS и Android</p></li>
+					<li class="description-item"><p>Слайдшоу и видео для корпоративных презентаций</p></li>
+				</ul>
+			</div>
+			<div class="description-secondary-block">
+				<p class="description-subheader">С 2004 года любим точность во всем:</p>
+				<table class="percent-list">
+					<tr class="percent-list-item">
+						<td>146<sup>%</sup></td>
+						<td>100<sup>%</sup></td>
+						<td>50<sup>%</sup></td>
+					</tr>
+					<tr class="percent-list-description">
+						<td>Уровень самоотдачи</td>
+						<td>Соблюдение сроков</td>
+						<td>Минимальная предоплата</td>
+					</tr>
+				</table>
+			</div>
 		</section>
 
 		<section class="gallery">
@@ -119,22 +125,26 @@
 
 	<footer class="main-footer">
 		<div class="map">
-			<section class="map-contacts">
+			<section class="map-contacts container">
 				<p><b>Nerds design studio</b></p>
 				<p>191186, Санкт-Петербург,<br> ул.Б.Конюшенная,д.19/8</p>
 				<p class="number">+7(812)275-75-75</p>
 				<a href="write-us.html" class="button button-write-us">Напишите нам</a>
 			</section>
 		</div>
-		<div class="footer-social">
-			<ul>
-				<li><a href="" class="social-button button-vk"></a></li>
-				<li><a href="" class="social-button button-facebook"></a></li>
-				<li><a href="" class="social-button button-instagram"></a></li>
-			</ul>
-		</div>
-		<p class="footer-text">Давайте дружить, это выгодно!</p>
-		<p>Скидка 10% для друзей из социальных сетей.</p>
+		<section class="footer-info container">
+			<div class="footer-social">
+				<ul>
+					<li><a href="" class="social-button button-vk"></a></li>
+					<li><a href="" class="social-button button-facebook"></a></li>
+					<li><a href="" class="social-button button-instagram"></a></li>
+				</ul>
+			</div>
+			<div class="footer-slogan">
+				<p class="footer-text">Давайте дружить, это выгодно!</p>
+				<p>Скидка 10% для друзей из социальных сетей.</p>
+			</div>
+		</section>	
 	</footer>
 
 	<section class="modal">
