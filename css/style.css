@@ -118,6 +118,15 @@ input[type="radio"].visually-hidden {
 	margin-right: 200px;
 }
 
+.main-header-logo:hover,
+.main-header-logo:focus {
+	opacity: 0.8;
+}
+
+.main-header-logo:active {
+	opacity: 0.3;
+}
+
 .site-navigation,
 .user-navigation {
 	list-style: none;
@@ -139,6 +148,12 @@ input[type="radio"].visually-hidden {
 .user-navigation a:hover,
 .user-navigation a:focus {
 	color: #f87f81;
+}
+
+.site-navigation a:active,
+.user-navigation a:active {
+	color: #000000;
+	opacity: 0.3;
 }
 
 .site-navigation-active a {
@@ -270,6 +285,10 @@ input[type="radio"].visually-hidden {
 	line-height: 55px;
 	font-weight: 500;
 	color: #000000;
+}
+
+.slide-three .slide-header {
+	max-width: 410px;
 }
 
 .button {
