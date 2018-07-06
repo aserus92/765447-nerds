@@ -34,15 +34,23 @@
 		<div class="catalog-wrapper">
 			<aside class="filter">
 				<form action="https://echo.htmlacademy.ru" method="get">
-				<fieldset class="filter-form">
+				<fieldset class="filter-item">
 					<legend class="options">Стоимость:</legend>
-					<input class="range-bar" type="range" name="price-range" min="0" max="15000">
-					<p>
-						<label>от<input type="number" name="min-value" value="0"></label>
-						<label>до<input type="number" name="min-value" value="15000"></label>
-					</p>
+					<div class="range-filter">
+            			<div class="range-controls">
+            				<div class="scale">
+				              <div class="bar"></div>
+				            </div>
+				            <div class="toggle toggle-min"></div>
+				            <div class="toggle toggle-max"></div>
+			          	</div>
+			          	<div class="price-controls">
+			          		<label class="min-price">от <input name="min-price" type="text" value="0"></label>
+            				<label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+			          	</div>
+        			</div>
 				</fieldset>
-				<fieldset class="filter-form">
+				<fieldset class="filter-item">
 					<legend class="options">Сетка:</legend>
 					<ul>
 						<li class="grid-options">
@@ -59,7 +67,7 @@
 						</li>
 					</ul>
 				</fieldset>
-				<fieldset class="filter-form">
+				<fieldset class="filter-item">
 					<legend class="options">Особенности:</legend>
 					<ul>
 						<li class="feature-options">
@@ -93,20 +101,20 @@
 					<p class="options">Сортировать:</p>
 					<ul class="sort-list">
 						<li class="sort-options sort-options-active">
-							<a href="#">По цене:</a>
+							<a href="#">По цене</a>
 						</li>
 						<li class="sort-options">
-							<a href="#">По типу:</a>
+							<a href="#">По типу</a>
 						</li>
 						<li class="sort-options">
-							<a href="#">По названию:</a>
+							<a href="#">По названию</a>
 						</li>
 					</ul>
 					<ul class="sort-arrows">
 						<li class="sort-down">
 							<a href="#">
 								<span class="visually-hidden">По убыванию</span>
-								<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="	width="11" height="10" viewBox="0 0 11 10">
+								<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="11" height="10" viewBox="0 0 11 10">
 								  <image xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAKBAMAAACQ3rmwAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAKlBMVEUAAAABAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEAAAAVmYzFAAAADHRSTlMARLuqzHfdIhHuZjNIVaVYAAAAAWJLR0QAiAUdSAAAAAlwSFlzAAALEgAACxIB0t1+/AAAADxJREFUCNdjEFICAgMGljNAEMDACCSPMTAw2Jw5cxBI1Zw5YwCkWM+cKQBSHHOOMoDAmhlgimUBmOIGYgD3BBG8ZWT8NQAAAABJRU5ErkJggg==" width="11" height="10"/>
 								</svg>
 							</a>
@@ -128,48 +136,48 @@
 						<li class="cards-block">
 							<img src="img/img-sedona.jpg" width="360" height="576" alt="Sedona">
 							<div class="cards-item-buy">
-								<p><b>Sedona</b></p>
-								<a href="#" class="cards-item-description"><p>Информационный сайт для&nbsp;туристов</p></a>
+								<a href="#"><b>Sedona</b></a>
+								<p class="cards-item-description">Информационный сайт для&nbsp;туристов</p>
 								<a class="button button-card">9 900 руб.</a>
 							</div>
 						</li>
 						<li class="cards-block">
 							<img src="img/img-pink.jpg" width="360" height="576" alt="Pink">
 							<div class="cards-item-buy">
-								<p><b>Pink app</b></p>
-								<a href="#" class="cards-item-description"><p>Продуктовый лендинг приложения для iOS и Android</p></a>
+								<a href="#"><b>Pink app</b></a>
+								<p class="cards-item-description">Продуктовый лендинг приложения для iOS и Android</p>
 								<a class="button button-card">9 900 руб.</a>
 							</div>
 						</li>
 						<li class="cards-block">
 							<img src="img/img-barbershop.jpg" width="360" height="576" alt="Borodinski">
 							<div class="cards-item-buy">
-								<p><b>Barbershop</b></p>
-								<a href="#" class="cards-item-description"><p>Сайт салоны красоты. Для&nbsp;мужчин, да.</p></a>
+								<a href="#"><b>Barbershop</b></a>
+								<p class="cards-item-description">Сайт салоны красоты. Для&nbsp;мужчин, да.</p>
 								<a class="button button-card">9 900 руб.</a>
 							</div>
 						</li>
 						<li class="cards-block">
 							<img src="img/img-mishka.jpg" width="360" height="576" alt="Mishka">
 							<div class="cards-item-buy">
-								<p><b>Mishka</b></p>
-								<a href="#" class="cards-item-description"><p>Интернет-магазин вязаных&nbsp;игрушек</p></a>
+								<a href="#"><b>Mishka</b></a>
+								<p class="cards-item-description">Интернет-магазин вязаных&nbsp;игрушек</p>
 								<a class="button button-card">9 900 руб.</a>
 							</div>
 						</li>
 						<li class="cards-block">
 							<img src="img/img-aplus.jpg" width="360" height="576" alt="A+">
 							<div class="cards-item-buy">
-								<p><b>A plus</b></p>
-								<a href="#" class="cards-item-description"><p>Лендинг курсов повышения квалификации</p></a>
+								<a href="#"><b>A plus</b></a>
+								<p class="cards-item-description">Лендинг курсов повышения квалификации</p>
 								<a class="button button-card">9 900 руб.</a>
 							</div>
 						</li>
 						<li class="cards-block">
 							<img src="img/img-kvast.jpg" width="360" height="576" alt="Кваст">
 							<div class="cards-item-buy">
-								<p><b>Кваст</b></p>
-								<a href="#" class="cards-item-description"><p>Промо-сайт производителя крафтового кваса</p></a>
+								<a href="#"><b>Кваст</b></a>
+								<p class="cards-item-description">Промо-сайт производителя крафтового кваса</p>
 								<a class="button button-card">9 900 руб.</a>
 							</div>
 						</li>
