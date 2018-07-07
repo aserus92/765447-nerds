@@ -1070,13 +1070,24 @@ p.description-subheader {
 	min-width: 40px;
 }
 
+.sort-arrows a {
+	opacity: 0.1;
+}
+
 .sort-arrows a:hover,
 .sort-arrows a:focus {
-	fill: #a6a6a6;
+	opacity: 0.4;
 }
 
 .sort-arrows a:active {
-	fill: #231f20;
+	opacity: 1;
+}
+
+.sort-arrow-active a,
+.sort-arrow-active a:hover,
+.sort-arrow-active a:focus,
+.sort-arrow-active a:active {
+	opacity: 1;
 }
 
 .cards ul {
