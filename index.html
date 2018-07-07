@@ -195,20 +195,22 @@
 		</section>	
 	</footer>
 
-	<section class="modal container">
+	<section class="modal">
 		<h2>Напишите нам</h2>
 		<form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
+			<div class="modal-wrap">
+				<p>
+					<label for="user-name">Ваше имя:</label><br>
+					<input class="write-us-name" id="user-name" type="text" name="name" placeholder="Имя Фамилия">
+				</p>
+				<p>
+					<label for="user-email">Ваш e-mail:</label><br>
+					<input class="write-us-email" id="user-email" type="email" name="email" placeholder="email@example.com">
+				</p>
+			</div>
 			<p>
-				<label for="user-name">Ваше имя:</label>
-				<input class="write-us-name" id="user-name" type="text" name="name" placeholder="Имя Фамилия">
-			</p>
-			<p>
-				<label for="user-email">Ваш e-mail:</label>
-				<input class="write-us-email" id="user-email" type="text" name="email" placeholder="email@example.com">
-			</p>
-			<p>
-				<label for="letter">Текст письма:</label>
-				<textarea class="write-us-letter" id="letter" name="letter">В свободной форме</textarea>
+				<label for="letter">Текст письма:</label><br>
+				<textarea class="write-us-letter" id="letter" name="letter" placeholder="В свободной форме" rows="5"></textarea>
 			</p>
 			<button class="button button-send-form" type="submit">Отправить</button>
 		</form>
