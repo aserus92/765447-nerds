@@ -54,11 +54,11 @@
 					<legend class="options">Сетка:</legend>
 					<ul>
 						<li class="grid-options">
-							<input class="visually-hidden filter-radio" id="filter-adaptive" type="radio" name="grid-types" value="adaptive" checked>
+							<input class="visually-hidden filter-radio" id="filter-adaptive" type="radio" name="grid-types" value="adaptive" checked disabled>
 							<label for="filter-adaptive">Адаптивная</label>
 						</li>
 						<li class="grid-options">
-							<input class="visually-hidden filter-radio" id="filter-fixed" type="radio" name="grid-types" value="fixed">
+							<input class="visually-hidden filter-radio" id="filter-fixed" type="radio" name="grid-types" value="fixed" disabled>
 							<label for="filter-fixed">Фиксированная</label>
 						</li>
 						<li class="grid-options">
@@ -71,11 +71,11 @@
 					<legend class="options">Особенности:</legend>
 					<ul>
 						<li class="feature-options">
-							<input class="visually-hidden filter-checkbox" id="filter-slider" type="checkbox" name="slider" checked>
+							<input class="visually-hidden filter-checkbox" id="filter-slider" type="checkbox" name="slider" checked disabled>
 							<label for="filter-slider">Слайдер</label> 
 						</li>
 						<li class="feature-options">
-							<input class="visually-hidden filter-checkbox" id="filter-advantage-block" type="checkbox" name="advantage-block">
+							<input class="visually-hidden filter-checkbox" id="filter-advantage-block" type="checkbox" name="advantage-block" disabled>
 							<label for="filter-advantage-block">Блок преимуществ</label>
 						</li>
 						<li class="feature-options">
@@ -266,16 +266,16 @@
 		<form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
 			<div class="modal-wrap">
 				<p>
-					<label for="user-name">Ваше имя:</label><br>
+					<label for="user-name">Ваше имя:</label>
 					<input class="write-us-name" id="user-name" type="text" name="name" placeholder="Имя Фамилия">
 				</p>
 				<p>
-					<label for="user-email">Ваш e-mail:</label><br>
+					<label for="user-email">Ваш e-mail:</label>
 					<input class="write-us-email" id="user-email" type="email" name="email" placeholder="email@example.com">
 				</p>
 			</div>
 			<p>
-				<label for="letter">Текст письма:</label><br>
+				<label for="letter">Текст письма:</label>
 				<textarea class="write-us-letter" id="letter" name="letter" placeholder="В свободной форме" rows="5"></textarea>
 			</p>
 			<button class="button button-send-form" type="submit">Отправить</button>

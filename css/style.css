@@ -363,7 +363,7 @@ input[type="radio"].visually-hidden {
 
 	background-image: url("../img/illustration-1.jpg");
 	background-repeat: no-repeat;
-	background-color: #ffffff;
+	background-color: #fb565a;
 }
 
 .service-apps h3::before {
@@ -376,7 +376,7 @@ input[type="radio"].visually-hidden {
 
 	background-image: url("../img/illustration-2.jpg");
 	background-repeat: no-repeat;
-	background-color: #ffffff;
+	background-color: #00ca74;
 }
 
 .service-presentation h3::before {
@@ -389,7 +389,7 @@ input[type="radio"].visually-hidden {
 
 	background-image: url("../img/illustration-3.jpg");
 	background-repeat: no-repeat;
-	background-color: #ffffff;
+	background-color: #efc849;
 }
 
 .service-web p,
@@ -781,14 +781,17 @@ p.description-subheader {
 }
 
 .modal {
+	display: none;
 	position: fixed;
-	bottom: 172px;	/* temp - 172px */
+	top: 50%;
 	left: 50%;
-	margin-left: -480px;
+
+	transform: translate(-50%, -50%);
+	
 	padding: 70px 100px 84px;
 	width: 960px;
 	box-sizing: border-box;
-	z-index: 3;
+	z-index: 101;
 	
 	background-color: #ffffff;
 	box-shadow: 0 15px 50px 0 rgba(0, 1, 1, 0.8);
@@ -826,7 +829,7 @@ p.description-subheader {
 .modal h2 {
 	margin: 0;
 	padding: 0;
-	margin-bottom: 45px;
+	margin-bottom: 42px;
 
 	font-size: 45px;
 	line-height: 45px;
@@ -855,6 +858,11 @@ p.description-subheader {
 	margin-bottom: 35px;
 }
 
+.write-us-form p {
+	display: flex;
+	flex-direction: column;
+}
+
 .write-us-form textarea {
 	padding: 10px 15px;
 	width: 760px;
@@ -865,6 +873,7 @@ p.description-subheader {
 
 .write-us-form label {
 	margin-bottom: 5px;
+	padding-bottom: 4px;
 
 	font-size: 16px;
 	line-height: 18px;
@@ -891,15 +900,15 @@ p.description-subheader {
 	border: 2px solid #000000;
 }
 
-/* Неправильный ввод
-.write-us-form input: {
-	color: #e74246;
+.write-us-form input[type="text"]:invalid,
+.write-us-form input[type="email"]:invalid {
+  	color: #e74246;
 
-	border: 2px solid #e74246;
-} */
+  	border: 2px solid #e74246;
+}
 
 .write-us-form .button-send-form {
-	margin-top: 40px;
+	margin-top: 50px;
 	width: 260px;
 }
 
