@@ -2,6 +2,10 @@ body {
 	min-width: 1200px;
 	margin:0;
 	padding: 0;
+	
+	/* test 
+	overflow-x:hidden;
+	max-width: 100%; */
 
 	font-family: "Roboto", "Arial", sans-serif;
 	font-size: 16px;
@@ -114,6 +118,7 @@ input[type="radio"].visually-hidden {
 
 .user-navigation .basket-open {
 	position: relative;
+
 	padding-left: 55px;
 }
 
@@ -123,6 +128,7 @@ input[type="radio"].visually-hidden {
   position: absolute;
   top: 17px;
   left: 17px;
+
   width: 17px;
   height: 17px;
   
@@ -158,8 +164,9 @@ input[type="radio"].visually-hidden {
 	padding-bottom:5px;
 	margin-right: 2px;
 
-	vertical-align: middle;
 	color: #000000;
+
+	vertical-align: middle;
 }
 
 .site-navigation a:hover,
@@ -205,6 +212,7 @@ input[type="radio"].visually-hidden {
 
   text-align: center;
   font-size: 0;
+
   -webkit-transform: translateX(-50%);
       -ms-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -258,6 +266,7 @@ input[type="radio"].visually-hidden {
 .slider ul {
 	margin: 0;
 	padding: 0;
+
 	list-style: none;
 }
 
@@ -388,7 +397,7 @@ input[type="radio"].visually-hidden {
  	height: 150px;
  	margin-bottom: 21px;
 
-	background-image: url("../img/illustration-1.jpg");
+	background-image: url("../img/illustration-1.png");
 	background-repeat: no-repeat;
 	background-color: #fb565a;
 }
@@ -401,7 +410,7 @@ input[type="radio"].visually-hidden {
  	height: 150px;
  	margin-bottom: 21px;
 
-	background-image: url("../img/illustration-2.jpg");
+	background-image: url("../img/illustration-2.png");
 	background-repeat: no-repeat;
 	background-color: #00ca74;
 }
@@ -414,7 +423,7 @@ input[type="radio"].visually-hidden {
  	height: 150px;
  	margin-bottom: 21px;
 
-	background-image: url("../img/illustration-3.jpg");
+	background-image: url("../img/illustration-3.png");
 	background-repeat: no-repeat;
 	background-color: #efc849;
 }
@@ -506,6 +515,7 @@ input[type="radio"].visually-hidden {
 p.description-subheader {
 	margin-bottom: 24px;
 	margin-top: 39px;
+
 	font-weight: 700;
 	color:#000000;
 
@@ -521,6 +531,7 @@ p.description-subheader {
 
 .description-item {
 	position: relative;
+
 	margin-top: 11px;
 	margin-bottom: 24px;
 	padding-left: 37px;
@@ -608,10 +619,10 @@ p.description-subheader {
 	margin: 0;
 	margin-left: 31px;
 	margin-right: 43px;
-	list-style: none;
-
 	padding-top: 46px;
 	padding-bottom: 37px;
+
+	list-style: none;
 }
 
 .gallery-item {
@@ -637,9 +648,11 @@ p.description-subheader {
 
 .gallery-list li:nth-child(1)::after {
 	content: "";
+
   	position: absolute;
   	top: 12px;
   	left: 248px;
+
   	height: 52px;
   	width: 2px;
 
@@ -648,9 +661,11 @@ p.description-subheader {
 
 .gallery-list li:nth-child(2)::after {
 	content: "";
+
   	position: absolute;
   	top: 19px;
   	left: 253px;
+  	
   	height: 52px;
   	width: 2px;
 
@@ -659,9 +674,11 @@ p.description-subheader {
 
 .gallery-list li:nth-child(3)::after {
 	content: "";
+
   	position: absolute;
   	top: 0;
   	left: 241px;
+
   	height: 52px;
   	width: 2px;
 
@@ -702,6 +719,7 @@ p.description-subheader {
 	padding-top: 32px;
 	padding-left: 50px;
 	padding-bottom: 47px;
+	padding-right: 55px;
 
 	background-color: #ffffff;
 }
@@ -744,10 +762,12 @@ p.description-subheader {
 
 .map .container::after {
 	content: "";
+
   	position: absolute;
   	top: 34px;
   	left: 700px;
   	z-index: 1;
+
   	width: 231px;
   	height: 190px;
 
@@ -763,9 +783,8 @@ p.description-subheader {
 	-webkit-box-align: center;
 	    -ms-flex-align: center;
 	        align-items: center;
-
-	/*temp*/
-	min-height: 217px;
+	padding-top: 56px;
+	padding-bottom: 56px;
 }
 
 .footer-social ul {
@@ -835,45 +854,47 @@ p.description-subheader {
 }
 
 .modal {
-	display: none;
+	
 	position: fixed;
 	top: 50%;
 	left: 50%;
+	z-index: 101;
+
+	display: none;
+	padding: 70px 100px 84px;
+	width: 960px;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+
+background-color: #ffffff;
+	-webkit-box-shadow: 0 15px 50px 0 rgba(0, 1, 1, 0.8);
+	        box-shadow: 0 15px 50px 0 rgba(0, 1, 1, 0.8);
 
 	-webkit-transform: translate(-50%, -50%);
 
 	    -ms-transform: translate(-50%, -50%);
 
 	        transform: translate(-50%, -50%);
-	
-	padding: 70px 100px 84px;
-	width: 960px;
-	-webkit-box-sizing: border-box;
-	        box-sizing: border-box;
-	z-index: 101;
-	
-	background-color: #ffffff;
-	-webkit-box-shadow: 0 15px 50px 0 rgba(0, 1, 1, 0.8);
-	        box-shadow: 0 15px 50px 0 rgba(0, 1, 1, 0.8);
 }
 
 .modal-close {
 	position: absolute;
 	top: 78px;
 	right: 90px;
+
 	width: 21px;
 	height: 21px;
 
 	font-size: 0;
 
+	background-color: #ffffff;
+	opacity: 0.3;
 	border: 0;
 
 	background-image: url("../img/close-cross.svg");
 	background-repeat: no-repeat;
 	background-position: 0 0;
-	background-color: #ffffff;
-	opacity: 0.3;
-
+	
 	cursor: pointer;
 }
 
@@ -1020,9 +1041,6 @@ p.description-subheader {
 .filter {
 	padding-top: 3px;
 	width: 260px;
-
-	/* temp */
-	min-height: 777px;
 }
 
 .range-filter {
@@ -1078,6 +1096,7 @@ p.description-subheader {
   	-webkit-box-shadow: 0 2px 1px 0 #cfcfcf;
   	        box-shadow: 0 2px 1px 0 #cfcfcf;
   	border-radius: 50%;
+
   	cursor: pointer;
 }
 
@@ -1197,6 +1216,7 @@ p.description-subheader {
 .grid-options label,
 .feature-options label {
 	position: relative;
+
 	display: block;
 
 	cursor: pointer;
@@ -1208,9 +1228,11 @@ p.description-subheader {
 
 .filter-radio + label::before {
 	content: "";
+
 	position: absolute;
 	top: 0px;
 	left: -35px;
+
 	width: 28px;
 	height: 28px;
 
@@ -1222,9 +1244,11 @@ p.description-subheader {
 
 .filter-radio:checked + label::after {
 	content: "";
+
 	position: absolute;
 	top: 0px;
 	left: -35px;
+
 	width: 28px;
 	height: 28px;
 
@@ -1254,9 +1278,11 @@ p.description-subheader {
 
 .filter-checkbox + label::before {
 	content: "";
+
 	position: absolute;
 	top: 1px;
 	left: -35px;
+
 	width: 28px;
 	height: 28px;
 
@@ -1268,9 +1294,11 @@ p.description-subheader {
 
 .filter-checkbox:checked + label::after {
 	content: "";
+
 	position: absolute;
 	top: 1px;
 	left: -35px;
+
 	width: 28px;
 	height: 28px;
 
@@ -1424,6 +1452,7 @@ p.description-subheader {
 
 .cards-block {
 	position: relative;
+
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -1439,9 +1468,11 @@ p.description-subheader {
 
 .cards-block::before {
 	content: "";
+
 	position: absolute;
 	top: 0;
 	left: 0;
+
 	width: 360px;
 	height: 40px;
 
@@ -1463,21 +1494,21 @@ p.description-subheader {
 
 .cards-item-buy {
 	position: absolute;
+
 	bottom: 0;
 	left: 0;
+
 	width: 360px;
 	min-height: 231px;
 	padding: 0 60px;
+	padding-top: 27px;
+	padding-bottom: 43px;
 	-webkit-box-sizing: border-box;
 	        box-sizing: border-box;
 
 	text-align: center;
 
 	background-color: #eeeeee;
-
-	padding-top: 27px;
-	padding-bottom: 43px;
-
 	opacity: 0;
 }
 
@@ -1492,7 +1523,6 @@ p.description-subheader {
 	line-height: 30px;
 	font-weight: 700;
 	text-align: center;
-
 	color: #000000;
 
 	text-transform: uppercase;
