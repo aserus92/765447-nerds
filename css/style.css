@@ -218,7 +218,7 @@ input[type="radio"].visually-hidden {
           transform: translateX(-50%);
 }
 
-.slider-controls i {
+.slider-controls label {
 	position: relative;
 
  	display: inline-block;
@@ -230,7 +230,7 @@ input[type="radio"].visually-hidden {
     cursor: pointer;
 }
 
-.slider-controls i::after {
+.slider-controls label::after {
     content: "";
 
     position: absolute;
@@ -246,7 +246,7 @@ input[type="radio"].visually-hidden {
     border-radius: 50%;
 }
 
-.slider-controls .slider-active::before {
+/*.slider-controls .slider-active::before {
     content: "";
   
     position: absolute;
@@ -261,7 +261,7 @@ input[type="radio"].visually-hidden {
     background-color: inherit;
     border: 2px solid #c1c1c1;
     border-radius: 50%;
-}
+} */
 
 .slider ul {
 	margin: 0;
@@ -277,10 +277,6 @@ input[type="radio"].visually-hidden {
 	margin-bottom: 80px;
 
 	background-color: #eeeeee;
-}
-
-.slide:nth-child(1) {
-    display: block;
 }
 
 .slide:nth-child(1) {
@@ -300,6 +296,38 @@ input[type="radio"].visually-hidden {
   	background-repeat: no-repeat;
   	background-position: 100% 20px;
 }
+
+#product-1:checked ~ .slider-list .slide:nth-child(1) {
+  	display: block;
+}
+
+#product-2:checked ~ .slider-list .slide:nth-child(2) {
+ 	 display: block;
+}
+
+#product-3:checked ~ .slider-list .slide:nth-child(3) {
+  	display: block;
+}
+
+#product-1:checked ~ .slider-controls .slider-controls-item--1::before,
+#product-2:checked ~ .slider-controls .slider-controls-item--2::before,
+#product-3:checked ~ .slider-controls .slider-controls-item--3::before {
+  	content: "";
+
+ 	position: absolute;
+  	left: 50%;
+  	top: 50%;
+  	z-index: 2;
+
+  	width: 4px;
+  	height: 4px;
+  	margin: -4px;
+
+  	background-color: inherit;
+  	border: 2px solid #c1c1c1;
+  	border-radius: 50%;
+}
+
 
 .slide .slide-text {
 	max-width: 430px;
@@ -712,6 +740,9 @@ p.description-subheader {
 }
 
 .map-contacts {
+	position: absolute;
+	z-index: 4;
+
 	max-width: 320px;
 	-webkit-box-sizing: border-box;
 	        box-sizing: border-box;
@@ -774,6 +805,15 @@ p.description-subheader {
   	background-image: url("../img/map-marker.png");
   	background-repeat: no-repeat;
   	background-position: 0 0;
+}
+
+.main-footer iframe {
+	position: absolute;
+	z-index: 3;
+
+	width: 100%;
+
+	border: none;
 }
 
 .footer-info {
@@ -1631,13 +1671,48 @@ background-color: #ffffff;
 }
 
 .main-footer {
+	position: relative;
+
 	margin-top: 80px;
 }
 
 .inner-page .main-footer {
+	position: relative;
+
 	margin-top: 59px;
 }
 
 .inner-page .footer-discount {
 	color: #283136;
+}
+
+
+.modal-show {
+  display: block;
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
+.modal-error {
+  animation: shake 0.6s;
 }

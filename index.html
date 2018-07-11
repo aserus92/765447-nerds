@@ -29,12 +29,16 @@
 			<h1 class="visually-hidden container">Веб-студия из Краснодара</h1>
 
 			<section class="slider container">
+				<input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
+		        <input class="visually-hidden" type="radio" id="product-2" name="toggle">
+		        <input class="visually-hidden" type="radio" id="product-3" name="toggle">
+
 				<div class="slider-controls">
-					<i class="slider-active"></i>
-          			<i></i>
-          			<i></i>
+					<label class="slider-controls-item slider-controls-item--1" for="product-1">Первый</label>
+          			<label class="slider-controls-item slider-controls-item--2" for="product-2">Второй</label>
+          			<label class="slider-controls-item slider-controls-item--3" for="product-3">Третий</label>
 				</div>
-				<ul>
+				<ul class="slider-list">
 					<li class="slide slide-one">
 						<p class="slide-header">Долго, дорого, скрупулезно.</p>
 						<p class="slide-text">Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
@@ -139,6 +143,7 @@
 	</main>
 
 	<footer class="main-footer">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651586!2d30.320894616097!3d59.938794181876254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1531258226445"  height="416" frameborder="0" style="border:0" allowfullscreen=""></iframe>
 		<div class="map">
 			<div class="container">
 				<section class="map-contacts">
@@ -216,5 +221,7 @@
 		</form>
 		<button class="modal-close" type="button">Закрыть</button>
 	</section>
+
+	<script src="js/script.js"></script>
 </body>
 </html>
