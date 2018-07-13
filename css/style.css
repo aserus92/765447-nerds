@@ -1443,6 +1443,7 @@ p.description-subheader {
 .sort .options {
 	padding: 0;
 	margin: 0;
+	margin-right: 30px;
 }
 
 .sort {
